@@ -158,7 +158,6 @@ main {
                 }
 
                 &>p {
-
                     padding-top: 10px;
                     text-transform: capitalize;
                 }
@@ -176,7 +175,6 @@ main {
                         align-items: center;
                         justify-content: space-around;
                         flex-wrap: wrap;
-                        row-gap: 10px;
                         margin-top: 5rem;
 
                         &>li {
@@ -195,12 +193,13 @@ main {
                     flex-wrap: wrap;
                     justify-content: space-around;
                     align-items: center;
-                    row-gap: 10px;
 
                     &>.height,
                     &>.weight,
                     &>.habitat,
                     &>.shape {
+                        margin-bottom: 10px;
+
                         &>h5 {
                             text-transform: capitalize;
                             font-weight: bold;
@@ -226,7 +225,6 @@ main {
                         align-items: center;
                         flex-wrap: wrap;
                         margin-top: 5rem;
-                        gap: 20px;
 
                         &>li {
                             list-style: none;
@@ -236,6 +234,7 @@ main {
                             background-color: rgba($color: $primary-cl, $alpha: .6);
                             padding: 10px 20px;
                             border-radius: 100vmax;
+                            margin-bottom: 10px;
 
                             &>p {
                                 margin: 0;
