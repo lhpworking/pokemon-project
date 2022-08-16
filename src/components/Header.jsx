@@ -7,7 +7,7 @@ export default function Header() {
         <header>
             <div className="container-fluid">
                 <Link to={ HOME_PATH } className="logo">
-                    <img src="../../public/img/pngwing.com.png" alt="" />
+                    <img src="/img/pngwing.com.png" alt="" />
                 </Link>
             </div>
         </header>
