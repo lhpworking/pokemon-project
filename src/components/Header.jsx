@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { HOME_PATH } from '../constants/path'
 
 export default function Header() {
     return (
         <header>
             <div className="container-fluid">
-                <a href="#" className="logo">
-                    <img src="/public/img/pngwing.com.png" alt="" />
-                </a>
+                <Link to={ HOME_PATH } className="logo">
+                    <img src="../../public/img/pngwing.com.png" alt="" />
+                </Link>
             </div>
         </header>
     )
