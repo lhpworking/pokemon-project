@@ -5,7 +5,7 @@ import PokemonServices from '../../services/pokemon';
 export default function Pokemon() {
     const [pokemons, setPokemons] = useState([])
     const [loading, setLoading] = useState(false)
-    const [url, setUrl] = useState('?offset=0&limit=30')
+    const [url, setUrl] = useState('?offset=0&limit=100')
     const [nextUrl, setNextUrl] = useState('')
     const [prevUrl, setPrevUrl] = useState('')
     const [search, setSearch] = useState('')
@@ -57,7 +57,8 @@ export default function Pokemon() {
                     value={ search }
                     onChange={ (e => setSearch(e.target.value)) } />
             </div>
-        </section><section className="pokemon">
+        </section>
+            <section className="pokemon">
                 <div className="container-fluid">
                     <div className="card-layout">
                         { search ? filterPokemon(pokemons)
